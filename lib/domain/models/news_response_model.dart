@@ -8,6 +8,7 @@ class NewsResponseModel {
   NewsResponseModel.fromJson(Map<String, dynamic> json) {
     status = json['status'];
     totalResults = json['totalResults'];
+    // articles= json['articles'] ??[];
     if (json['articles'] != null) {
       articles = <Articles>[];
       json['articles'].forEach((v) {
