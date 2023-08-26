@@ -239,7 +239,7 @@ class _NewsState extends ConsumerState<NewsFeedView> {
           children: [
             const  Icon(Icons.error_outline,size: 34,color: Colors.red,),
             SizedBox(height: 10.h,),
-            Text(error.toString(),overflow: TextOverflow.ellipsis,),
+            textWidget(title :error.toString(),textColor: whiteColor),
           ],
     ));
   }

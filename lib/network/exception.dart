@@ -33,7 +33,7 @@ class DataException implements Exception {
 
   static customException(String errorMessage) {
     if(errorMessage == 'noInternet')
-    message = 'Please Check if the Internet Connection is working!';
+    message = 'Please Check Your Internet Connection!';
     return errorMessage;
   }
 
